@@ -1,12 +1,11 @@
 # Car Manual AI - Android App Setup Guide
 
 ## Prerequisites
-- Android Studio (Hedgehog or later)
-- Physical Android device (API 24+, Android 7.0+)
+- Physical Android device (API 32+, Android 12.0+)
 - ADB (Android Debug Bridge) installed
-- Your `.task` model file from HuggingFace
+-  `.task` model file from HuggingFace
 
-## Step 1: Download Your Model
+## Step 1: Download  Model
 From the HuggingFace repository:
 https://huggingface.co/Nihal2000/Car-Manual-gemma-3-270m-it/tree/main
 
@@ -14,7 +13,7 @@ Download the `.task` file (likely named something like `car_manual_model.task`)
 
 ## Step 2: Push Model to Device
 
-According to Google's MediaPipe documentation, during development you can use adb to push the model to your test device:
+use adb to push the model to your test device:
 
 ```bash
 # Create directory on device
@@ -36,7 +35,7 @@ adb shell ls -lh /data/local/tmp/llm/
 3. Name: `CarManualAI`
 4. Package: `com.example.carmanualai`
 5. Language: **Java**
-6. Minimum SDK: **API 24 (Android 7.0)**
+6. Minimum SDK: **API 32 (Android 12.0)**
 
 ## Step 4: Add Project Files
 
@@ -72,11 +71,7 @@ private static final String MODEL_PATH = "/data/local/tmp/llm/car_manual_model.t
 
 ## Step 7: Test the App
 
-1. Wait for model to load (first time may take 10-30 seconds)
-2. Try sample questions:
-   - "How do I change my car's oil?"
-   - "What causes the check engine light?"
-   - "When should I rotate my tires?"
+. Wait for model to load (first time may take 10-30 seconds)
 
 ## Configuration Options
 
