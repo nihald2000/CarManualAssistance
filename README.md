@@ -118,14 +118,6 @@ Example download flow:
 3. Load model from internal storage
 4. Cache for future use
 
-## Key Features
-
-✅ Pure Java implementation (no Kotlin)
-✅ Simple, clean UI
-✅ Background threading (non-blocking)
-✅ Progress indicators
-✅ Error handling
-✅ On-device inference (no internet needed after model download)
 
 ## Resources
 
@@ -135,7 +127,7 @@ Example download flow:
 
 ## Model Information
 
-Your Car Manual model is based on Gemma-3 270M parameters, fine-tuned for automotive questions. It should handle:
+ Car Manual model is based on Gemma-3 270M parameters, fine-tuned for automotive questions. It should handle:
 - Car maintenance queries
 - Parts identification
 - Troubleshooting guidance
